@@ -1,36 +1,28 @@
 # Quotations app
 
-## Run the app
+## Installation of requirements
 
-### uv
+It is necessary to install dependencies with `poetry` through the file `pyproject.toml`.
 
-Run as a desktop app:
-
+If you don't have poetry installed, you can install it with `pip`.
 ```
-uv run flet run
+pip install poetry
 ```
-
-Run as a web app:
-
-```
-uv run flet run --web
-```
-
-### Poetry
-
 Install dependencies from `pyproject.toml`:
 
 ```
 poetry install
 ```
+## Run in development mode
+Installing through poetry creates a virtual environment, so it is no longer necessary to create one.
 
-Run as a desktop app:
+- Run as a desktop app:
 
 ```
 poetry run flet run
 ```
 
-Run as a web app:
+- Run as a web app:
 
 ```
 poetry run flet run --web
@@ -79,3 +71,10 @@ flet build windows -v
 ```
 
 For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
+
+## Installation via release
+Download the `quotations.7z` file from the [releases page](https://github.com/santiago-rincon/quotations_imocom/releases). Unzip the file into a folder and place that folder in a path on your computer. Finally, run the `quotations.exe` file. The first time it will take a while to start up while the necessary files are created for it to work.
+
+## Template editing
+To edit the Word quotation template, you must access the following path:
+- Windows: C:\Users\<your_user>\AppData\Roaming\Flet\quotations\flet\app\assets\shema.docx
